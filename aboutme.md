@@ -4,7 +4,7 @@ title: About me
 subtitle: Data Scientist/Solo Traveler
 ---
 
-I'm Paul. 
+Hi! I'm Paul. I currently work as a data scientist in a healthcare company. In case you are wondering what kind of career is that, it is just a fancy term for a researcher! What we do is conduct data science projects that use machine learning, mathematics and statistics approach and sometimes from time to time data-engineering tasks to solve industry related problems, in my case, healthcare. Besides my career, I am also a solo traveler, I enjoy wandering around new places and trying out new things. 
 
 - I rock a great mustache
 - I'm extremely loyal to my family
