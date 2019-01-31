@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-image: /img/hello_world.jpeg
+image: /img/pic1.jpg
 subtitle: Data Scientist/Solo Traveler
 bigimg: /img/prof_pic.jpg
 ---
