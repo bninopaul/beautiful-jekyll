@@ -15,3 +15,6 @@ https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
 Book:
 
 https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+
+OpenAI Gym
+https://gym.openai.com/docs/
