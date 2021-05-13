@@ -232,19 +232,21 @@ We can see from the plot above that the derived values of $\theta MLE$ are the r
 
 (Algorithm) Twenty values were assumed to be observed from a continuous distribution with mean $\theta$. The values obtained are as follows:
 
-+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
 | 102 | 112 | 131 | 107 | 114 | 95  | 133 | 145 | 139 | 117 |
-+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | 93  | 111 | 124 | 122 | 136 | 141 | 119 | 122 | 151 | 143 |
-+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
 
 Suppose now that, as in a simulation, we have the option of continually generating additional data values. How many additional observations do you think will we have to generate if we want to be 99% certain that our final estimate of $\theta$ is correct within ±0.5 units? Discuss how you will proceed (include assumptions and/or reasons), present the necessary steps (as in an algorithm),and implement in $R$.
 
 ## Solution to Problem 2
 
 The formula for confidence interval for population mean is given by: 
+
 $$\bar{X} \pm Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
+
 provided that data follows a normal distribution with population mean $\theta$ and population standard deviation $\sigma$. However, the given data provided in Problem 2 did not provide a value for $\sigma$. Thus we need to find a way to use the sample standard deviation $s$ instead. Hence, we can assume that the $\frac{X-\theta}{\sigma/sqrt(n)}$ follows a student T distribution instead of the standard normal distribution $Z$, with confidence interval for the population mean $\theta$ given by:
+
 $$\bar{X} \pm t_{\alpha/2}\frac{s}{\sqrt{n}}$$
 with degrees of freedom = n-1.
 
