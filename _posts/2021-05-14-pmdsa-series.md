@@ -248,6 +248,7 @@ $$\bar{X} \pm Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
 provided that data follows a normal distribution with population mean $\theta$ and population standard deviation $\sigma$. However, the given data provided in Problem 2 did not provide a value for $\sigma$. Thus we need to find a way to use the sample standard deviation $s$ instead. Hence, we can assume that the $\frac{X-\theta}{\sigma/sqrt(n)}$ follows a student T distribution instead of the standard normal distribution $Z$, with confidence interval for the population mean $\theta$ given by:
 
 $$\bar{X} \pm t_{\alpha/2}\frac{s}{\sqrt{n}}$$
+
 with degrees of freedom = n-1.
 
 The problem asks how many additional samples we should generate if we want to have a margin of error $\pm 0.5$ with 99% confidence level($\alpha=0.01$). In other words, what is the value of $n$ for which the margin of error is `E=0.5`?
