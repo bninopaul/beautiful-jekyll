@@ -535,3 +535,34 @@ Now, let's test the DGP for multivariate standard normal distribution with dimen
         # visualize the data
         visualize_dgp(stacked_data_df_dimension3)
         ```
+
+
+## Problem 4
+
+(Asymptotic Analysis; with Viewing assignment) Answer the questions below after watching the following materials (or doing research on your own). All materials are credited to the owners.
+
+> i. (Start at 17’27”, until 1:03’10”; approx. 45mins; may proceed watching until the end) On analysis of algorithms [Lec 1 | MIT 6.046J / 18.410J Introduction toAlgorithms (SMA 5503), Fall 2005 - YouTube](https://www.youtube.com/watch?app=desktop&v=JPyuH4qXLZ0)
+
+>ii. (Approx. 15mins) Asymptotic notations [1.8.1 Asymptotic Notations Big Oh - Omega - Theta #1 - YouTube](https://www.youtube.com/watch?v=A03oI0znAoc) and more examples [1.8.2 Asymptotic Notations - Big Oh - Omega - Theta #2 - YouTube](https://www.youtube.com/watch?v=Nd0XDY-jVHs) (approx. 10mins)
+
+>iii. (Approx. 19mins) Best, worst, and average case Analysis [1.11 Best Worst andAverage Case Analysis - YouTube](https://www.youtube.com/watch?v=lj3E24nnPjI)
+
+>iv. (Approx. 21mins) Tower of Hanoi and Recursion [Towers of Hanoi: A CompleteRecursive Visualization - YouTube](https://www.youtube.com/watch?v=rf6uf3jNjbo) [I suggest you first try playing the game: [Play Tower of Hanoi (mathsisfun.com)](https://www.mathsisfun.com/games/towerofhanoi.html) before watching the video.]
+
+a. Why and how do we evaluate the performance of an algorithm?
+b. In the Tower of Hanoi problem, what is the best case in solving the problem? What is the best-case time?
+c. In the Tower of Hanoi problem, what is the worst case in solving the problem? What is the worst-case time?
+
+## Solution to Problem 4
+
+*a. Why and how do we evaluate the performance of an algorithm?*
+
+As the saying goes "There are many ways to skin a cat", same goes with implementing a solution using algorithms. We can derive different methods/approaches/implementations to solve a a particular problem using algorithm but we need to pick the best performing one. By best algorithm, I do not mean a single absolute solution that works for all types of scenarios, the best algorithm is the one that works with a specific problem use case and given resources at hand. That is why there are many areas, the performance of an algorithm is evaluated.  First, its correctness, did the algorithm correctly outputs the desired result? Second, we need to assess its runtime performance, a fast versus a slow runtime. Third, other features like the simplicity of the algorithm, is it hard to maintain or not in terms of computer engineering perspective? Is it stable and robust enough to handle multiple different cases?. There are a lot of areas to consider when choosing the best performing algorithm and sometimes these areas are contradicting, meaning choosing one feature to prioritize will compromise the other. So in the end, choosing the best one is still dependent on your actual planned implementation and your resources.  
+
+*b. In the Tower of Hanoi problem, what is the best case in solving the problem? What is the best-case time?*
+
+Given the recursion solution presented in the video, the best case in solving the Tower of Hanoi problem is when we are solving the case when there are number of disk N=1. Then the best-case time is just the constant value 1 move. $T(n=1) = 1$
+
+*c. In the Tower of Hanoi problem, what is the worst case in solving the problem? What is the worst-case time?*
+
+On the other hand, the worst case is when there are N=K disks to move from the start peg to the end peg. According to the recursion approach, it would take $T(n=K) = 2T(n=K-1) + 1$, since there are 2 recursions involved plus the constant single move. Solving this, then we will have $T(n=K) = 2^n - 1$,  
